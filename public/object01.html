@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    Object
+    <button onclick="btn_ev();">이벤트 발생</button>
+</body>
+<script text="JavaScript">
+    function btn_ev(){
+        alert('당첨!');
+
+        let obj = new Object();
+        obj.key1 = 'value';
+        obj.key2 = '사과';
+        obj.key3 = ['바나나', '딸기'];
+
+        let obj2 = {key1: '사과', key2: '바나나'};
+        console.log(obj2);
+        console.log(obj2.key1);
+        
+    }
+</script>
+</html>

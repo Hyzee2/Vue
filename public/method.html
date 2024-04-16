@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멋진스타일</title>
+    <style>
+        body {
+            font-family: Avenir, Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 60px;
+        }
+        img{
+            width: 150px;
+        }
+        .moveX{
+            transform: scaleX(-1);
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div><img id="img" src="/src/assets/img_DancingLion.png"></div>
+    <h2>멋진 스타일</h2>
+    <h3 id="fashion" style="color: blue;">시원한 유럽패션</h3>
+    <h4>
+        <span>좋아요: </span>
+        <span id="count">0</span>
+    </h4>
+    <button onclick="like();">좋아요</button>&nbsp;&nbsp;
+    <button onclick="color();">패션변경하기</button>
+</body>
+<script text="JavaScript">
+    let cnt = 0;
+    let cntF = 0;
+
+    function like(){
+        cnt++;
+        document.getElementById("count").innerHTML = cnt;
+    }
+
+    function color(){
+        cntF++;
+        if(cntF%2==0){
+            input("멋진 강남패션", "red", "scaleX(-1)");
+        }else{   
+            input("시원한 유럽패션", "blue", "scaleX(1)");
+        }
+    }
+
+    function input(a, b, c){
+        document.getElementById("fashion").innerText = a;
+        document.getElementById("fashion").style.color = b;
+        document.getElementById("img").style.transform = c;
+    }
+</script>
+</html>

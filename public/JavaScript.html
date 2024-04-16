@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="btn1();">버튼</button>
+</body>
+<script>
+    function btn_cl(){ // 함수 표현식
+        alert("버튼");
+    }
+
+    const btn1 = () => {alert("화살표 함수");} // 함수 선언식, 매개변수 없음
+
+    const btn2 = res1 => {alert("화살표 함수");} // 매개변수 res1이 들어간다는 의미 (매개변수 1개일 때만 괄호 생략 가능)
+
+    const btn3 = (res1, res2) => {alert("화살표 함수");} // 매개변수 res1, res2 가 들어간다는 의미
+    
+    setTimeout(function(){ // 콜백함수: 
+        alert('test');
+    }, 1000)
+
+</script>
+</html>
