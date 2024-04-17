@@ -118,17 +118,18 @@ select {
 }
 
 button {
-  width: 150px;
-  height: 60px;
+  width: 100px;
+  height: 30px;
   margin: 30px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 15px;
   border: none;
   background-color:lightblue;
   color: #2c3e50;
-  font-size: 25px;
+  font-size: 15px;
   font-weight: bold;
-  margin: 0;
+  margin: 2px;
+  align-content: center;
 }
 
 .default{

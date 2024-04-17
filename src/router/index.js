@@ -38,7 +38,31 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import('@/backup/score.vue')
-  }
+  },
+  {
+    path: '/for',
+    name: 'for',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('@/backup/for.vue')
+  },
+  {
+    path: '/comp',
+    name: 'comp',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('@/backup/Component01.vue')
+  },
+  {
+    path: '/axios',
+    name: 'axios',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('@/backup/_axios.vue')
+  },
 ]
 
 const router = createRouter({

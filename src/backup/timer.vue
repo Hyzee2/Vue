@@ -5,6 +5,9 @@
 <button @click="btn_ev">알람시작</button><br>
 <div></div>
 <div id="result" style="display: none;">{{ result }}초가 지났습니다<br>알람 시작!</div>
+<div v-for="li in 9" :key="li">
+        {{li}}
+    </div>
 </template>
 
 <script>

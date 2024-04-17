@@ -4,9 +4,13 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/join">Join</router-link> |
     <router-link to="/form">Form</router-link> |
-    <router-link to="/score">Score</router-link>
+    <router-link to="/score">Score</router-link> |
+    <router-link to="/for">For</router-link> |
+    <router-link to="/comp">Component</router-link> |
+    <router-link to="/axios">Axios</router-link>
   </nav>
   <router-view/>
+ 
 </template>
 
 <style>
@@ -19,15 +23,21 @@
 }
 
 nav {
-  padding: 30px;
+  padding: 15px;
+  background-color: #4f453c;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 
 nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  
+  color: #ffffff;
+  padding: 20px;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #FFB53C;
+  font-weight: bold;
 }
 </style>
