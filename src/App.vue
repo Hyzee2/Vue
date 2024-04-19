@@ -7,7 +7,8 @@
     <router-link to="/score">Score</router-link> |
     <router-link to="/for">For</router-link> |
     <router-link to="/comp">Component</router-link> |
-    <router-link to="/axios">Axios</router-link>
+    <router-link to="/axios">Axios</router-link> |
+    <router-link to="/node">Node</router-link>
   </nav>
   <router-view/>
  

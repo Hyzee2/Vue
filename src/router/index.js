@@ -63,6 +63,14 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import('@/backup/_axios.vue')
   },
+  {
+    path: '/node',
+    name: 'node',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('@/backup/node.vue')
+  },
 ]
 
 const router = createRouter({
